@@ -1,0 +1,6 @@
+FILES="mkdiff mkstatic mkstatic.sh Dockerfile.build"
+
+for file in $FILES; do
+
+  diff -Naupr /tmpdir/$file $file
+done
